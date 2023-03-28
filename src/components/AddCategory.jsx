@@ -10,7 +10,7 @@ export const AddCategory = ({ onNewCategory }) => {
 
   //Evitamos que reinicie
   const onSubmit = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     if (inputValue.trim().length < 1) return; //trim evita espacio y si es menor a 1 no retorna el vacio
     setInputValue(""); // Al presionar enter nuestro setInputValue se hace un STRING VACIO
     onNewCategory(inputValue.trim());
