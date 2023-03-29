@@ -12,6 +12,8 @@ Este es un buscador de GIFS, el cual funciona indexando los GIFS más populares 
 
 ✔ - Custom Hooks
 
+✔ - Testing: (Jest y React Testing Library)
+
 ✔ - Fetch hacia un API (Giphy)
 
 ✔ - Comunicación entre componentes
