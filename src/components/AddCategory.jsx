@@ -1,4 +1,5 @@
 import { useState } from "react";
+import propTypes from "prop-types";
 
 export const AddCategory = ({ onNewCategory }) => {
   const [inputValue, setInputValue] = useState("");
@@ -18,7 +19,7 @@ export const AddCategory = ({ onNewCategory }) => {
 
   return (
     // Al devolver un solo elemento no es necesario utilizar fragments </>
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form">
       <input
         type="text"
         placeholder="Busca el GIf que necesites"
@@ -27,4 +28,8 @@ export const AddCategory = ({ onNewCategory }) => {
       />
     </form>
   );
+};
+
+AddCategory.propTypes = {
+  onNewCategory: propTypes.func.isRequired,
 };
